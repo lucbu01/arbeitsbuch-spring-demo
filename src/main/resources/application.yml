@@ -1,0 +1,15 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/arbeitsbuch"
+    username: admin
+    password: secret
+logging:
+  file:
+    name: log/arbeitsbuch-spring.log
